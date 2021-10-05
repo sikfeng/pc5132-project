@@ -1,0 +1,184 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Preliminaries #  Before we start, we would like to introduce a few concepts that will be needed later.
+Uncertainty Principle #  I am sure that your physics teachers have taught you this: when conducting physics experiments, the measurements you make must be accompanied by an “uncertainty”. Your teacher may have told you that this “uncertainty” value is due to the accuracy of the measuring instrument, as well as human error.">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Preliminaries">
+<meta property="og:description" content="Preliminaries #  Before we start, we would like to introduce a few concepts that will be needed later.
+Uncertainty Principle #  I am sure that your physics teachers have taught you this: when conducting physics experiments, the measurements you make must be accompanied by an “uncertainty”. Your teacher may have told you that this “uncertainty” value is due to the accuracy of the measuring instrument, as well as human error.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sikfeng.github.io/pc5132-project/content/preliminaries/"><meta property="article:section" content="content">
+<title>Preliminaries | Quantum Entanglement - PC5132 Project Website</title>
+<link rel=manifest href=../../manifest.json>
+<link rel=icon href=../../favicon.png type=image/x-icon>
+<link rel=stylesheet href=../../book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
+<script defer src=../../flexsearch.min.js></script>
+<script defer src=../../en.search.min.ec076455b2bd1f3abd33add7a2c8874a50ca07a2924c2a3575c3493208c312a1.js integrity="sha256-7AdkVbK9Hzq9M63XosiHSlDKB6KSTCo1dcNJMgjDEqE=" crossorigin=anonymous></script>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=../../><span>Quantum Entanglement - PC5132 Project Website</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li class=book-section-flat>
+<span>Content</span>
+<ul>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/history/>History</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/preliminaries/ class=active>Preliminaries</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/dirac-notation/>Dirac Notation</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/definitions/>Definition</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/epr-paradox-bell-theorem/>EPR Paradox and Bell's Theorem</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/applications/>Applications</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/quiz/>Quiz</a>
+</li>
+<li class=book-section-flat>
+<input type=checkbox id=section-3a0c7830ea5fa79ee5b833ae60bf14d8 class=toggle>
+<label for=section-3a0c7830ea5fa79ee5b833ae60bf14d8 class="flex justify-between">
+<a href=https://sikfeng.github.io/pc5132-project/content/misc/>Misc</a>
+</label>
+<ul>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/misc/distribution-of-work/>Distribution of Work</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/misc/tools/>Tools Used</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=book-section-flat>
+<input type=checkbox id=section-64775a26c7eeafa47bf8aa4a0037952b class=toggle>
+<label for=section-64775a26c7eeafa47bf8aa4a0037952b class="flex justify-between">
+<a href=https://sikfeng.github.io/pc5132-project/misc/>Misc</a>
+</label>
+<ul>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/misc/distribution-of-work/>Distribution of Work</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/misc/tools/>Tools Used</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://github.com/sikfeng/pc5132-project target=_blank rel=noopener>
+Github
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=../../svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Preliminaries</strong>
+<label for=toc-control>
+<img src=../../svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#preliminaries>Preliminaries</a>
+<ul>
+<li><a href=#uncertainty-principle>Uncertainty Principle</a></li>
+<li><a href=#wave-functions>Wave Functions</a></li>
+<li><a href=#complementarity>Complementarity</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=preliminaries>
+Preliminaries
+<a class=anchor href=#preliminaries>#</a>
+</h1>
+<p>Before we start, we would like to introduce a few concepts that will be needed later.</p>
+<h2 id=uncertainty-principle>
+Uncertainty Principle
+<a class=anchor href=#uncertainty-principle>#</a>
+</h2>
+<p>I am sure that your physics teachers have taught you this: when conducting physics experiments, the measurements you make must be accompanied by an “uncertainty”. Your teacher may have told you that this “uncertainty” value is due to the accuracy of the measuring instrument, as well as human error. Hence, many people would assume that the uncertainty principle is about something of similar nature. However, that is a misconception. The uncertainty principle is actually one of the fundamental principles that describes how our universe works. It is about how one cannot accurately measure both velocity and position of a certain object. This is derived from the wave-particle duality of everything in the universe. A particle’s position can be measured precisely, but not its velocity. In contrast, a wave’s velocity can be precisely measured, but not its position. It sounds pretty cool, doesn’t it?</p>
+<h2 id=wave-functions>
+Wave Functions
+<a class=anchor href=#wave-functions>#</a>
+</h2>
+<p>So, we know that particles-or anything in the universe, in that matter-can behave like waves. Now that raises many questions. The first would be: what is the mathematical representation of the wave? And the second would be: what exactly is waving? To answer those questions, the physicists at the time were tasked with two things: 1. Find the wave equation
+<link rel=stylesheet href=../../katex/katex.min.css>
+<script defer src=../../katex/katex.min.js></script>
+<script defer src=../../katex/auto-render.min.js onload=renderMathInElement(document.body)></script><span>
+\(\psi(x)\)
+</span>
+of a particle with wavelength <span>
+\(\lambda\)
+</span>
+, and 2. Figure out what exactly is waving in the wave equation. The first question was answered by Erwin Schrodinger with his famous Schrodinger’s Equation (more on that later). However, even Schrodinger himself failed to answer the second question: he assumed that just like water waves (which has the mass density of water waving), the wave of an electron would have the charge density of that electron waving. However, this is proven to be flawed by Max Born later on. Born said that the square of the wave function actually describes that probably of finding the particle of interest (an electron in this case) in a given position. As to the physical interpretation of the wave function, it is still up top debate till this day. At the end of the day, perhaps the physical interpretation is not very important after all.</p>
+<h2 id=complementarity>
+Complementarity
+<a class=anchor href=#complementarity>#</a>
+</h2>
+<p>Traditionally, when we talk about complementarity, we are talking about different but non-conflicting descriptions of the same object. For example, you would see a circle when looking top down at a cylinder, but another person would see a rectangle from the side. naturally we would combine the two pictures and have a more descriptive set of information about the aforementioned cylinder. However, we are not able to do this in quantum mechanics. Two sets of information from two separate observers on the same object at the same time can never be combined to give a more detailed observation of the object. A great analogy would be a photograph of two flowers. When you put your focus on flower A, the information about flower B (represented by flurry outlines) will be comprised, and vice versa. This is what complementarity means in quantum mechanics.</p>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#preliminaries>Preliminaries</a>
+<ul>
+<li><a href=#uncertainty-principle>Uncertainty Principle</a></li>
+<li><a href=#wave-functions>Wave Functions</a></li>
+<li><a href=#complementarity>Complementarity</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>

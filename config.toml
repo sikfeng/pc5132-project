@@ -1,0 +1,33 @@
+baseURL = 'https://sikfeng.github.io/pc5132-project'
+title = 'Quantum Entanglement - PC5132 Project Website'
+publishDir = "docs"
+
+relativeURLs = true
+canonifyURLs = true
+disablePathToLower = true
+timeout = 60000
+enableEmoji = true
+enableRobotsTXT = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
+
+[[menu.after]]
+  name = "Github"
+  url = "https://github.com/sikfeng/pc5132-project"
+  weight = 10
+
+[params]
+  BookTheme = "dark"
+  BookToC = true
+  BookSection = "*"
+  BookRepo = "https://github.com/sikfeng/pc5132-project"
+  BookSearch = true
+
+[module]
+  [[module.imports]]
+    path = 'github.com/alex-shpak/hugo-book'

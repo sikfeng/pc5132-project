@@ -1,0 +1,308 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Dirac Notation #  Prerequisite: Basic Linear Algebra (covered under H2 ’A’ Level Further Mathematics Syllabus)
+Dirac notation is often used in quantum mechanics and quantum information to describe phenomena. Here we will try to explain the notation that you will need to know.
+Ket #  A ket   \(\vert\psi\rangle\)  can be represented by a column vector.
+For example, a 2 dimensional ket could be represented by  \(\begin{pmatrix} v_1 \\ v_2 \end{pmatrix}\)  , and a 3 dimensional ket could be represented by  \(\begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix}\)  , and so on (where  \(v_i\in\mathbb{C}\)  for  \(i\in\mathbb{N}\)  ).">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Dirac Notation">
+<meta property="og:description" content="Dirac Notation #  Prerequisite: Basic Linear Algebra (covered under H2 ’A’ Level Further Mathematics Syllabus)
+Dirac notation is often used in quantum mechanics and quantum information to describe phenomena. Here we will try to explain the notation that you will need to know.
+Ket #  A ket   \(\vert\psi\rangle\)  can be represented by a column vector.
+For example, a 2 dimensional ket could be represented by  \(\begin{pmatrix} v_1 \\ v_2 \end{pmatrix}\)  , and a 3 dimensional ket could be represented by  \(\begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix}\)  , and so on (where  \(v_i\in\mathbb{C}\)  for  \(i\in\mathbb{N}\)  ).">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sikfeng.github.io/pc5132-project/content/dirac-notation/"><meta property="article:section" content="content">
+<title>Dirac Notation | Quantum Entanglement - PC5132 Project Website</title>
+<link rel=manifest href=../../manifest.json>
+<link rel=icon href=../../favicon.png type=image/x-icon>
+<link rel=stylesheet href=../../book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
+<script defer src=../../flexsearch.min.js></script>
+<script defer src=../../en.search.min.ec076455b2bd1f3abd33add7a2c8874a50ca07a2924c2a3575c3493208c312a1.js integrity="sha256-7AdkVbK9Hzq9M63XosiHSlDKB6KSTCo1dcNJMgjDEqE=" crossorigin=anonymous></script>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=../../><span>Quantum Entanglement - PC5132 Project Website</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li class=book-section-flat>
+<span>Content</span>
+<ul>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/history/>History</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/preliminaries/>Preliminaries</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/dirac-notation/ class=active>Dirac Notation</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/definitions/>Definition</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/epr-paradox-bell-theorem/>EPR Paradox and Bell's Theorem</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/applications/>Applications</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/quiz/>Quiz</a>
+</li>
+<li class=book-section-flat>
+<input type=checkbox id=section-3a0c7830ea5fa79ee5b833ae60bf14d8 class=toggle>
+<label for=section-3a0c7830ea5fa79ee5b833ae60bf14d8 class="flex justify-between">
+<a href=https://sikfeng.github.io/pc5132-project/content/misc/>Misc</a>
+</label>
+<ul>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/misc/distribution-of-work/>Distribution of Work</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/content/misc/tools/>Tools Used</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=book-section-flat>
+<input type=checkbox id=section-64775a26c7eeafa47bf8aa4a0037952b class=toggle>
+<label for=section-64775a26c7eeafa47bf8aa4a0037952b class="flex justify-between">
+<a href=https://sikfeng.github.io/pc5132-project/misc/>Misc</a>
+</label>
+<ul>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/misc/distribution-of-work/>Distribution of Work</a>
+</li>
+<li>
+<a href=https://sikfeng.github.io/pc5132-project/misc/tools/>Tools Used</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://github.com/sikfeng/pc5132-project target=_blank rel=noopener>
+Github
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=../../svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Dirac Notation</strong>
+<label for=toc-control>
+<img src=../../svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#dirac-notation>Dirac Notation</a>
+<ul>
+<li><a href=#ket>Ket</a></li>
+<li><a href=#kronecker-product>Kronecker product</a></li>
+</ul>
+</li>
+<li><a href=#quantum-postulates>Quantum Postulates</a>
+<ul>
+<li><a href=#postulate-1>Postulate 1</a></li>
+</ul>
+</li>
+<li><a href=#further-reading>Further Reading</a></li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=dirac-notation>
+Dirac Notation
+<a class=anchor href=#dirac-notation>#</a>
+</h1>
+<p><em>Prerequisite: Basic Linear Algebra (covered under H2 ’A’ Level Further Mathematics Syllabus)</em></p>
+<p>Dirac notation is often used in quantum mechanics and quantum information to describe phenomena. Here we will try to explain the notation that you will need to know.</p>
+<h2 id=ket>
+Ket
+<a class=anchor href=#ket>#</a>
+</h2>
+<p>A ket
+<link rel=stylesheet href=../../katex/katex.min.css>
+<script defer src=../../katex/katex.min.js></script>
+<script defer src=../../katex/auto-render.min.js onload=renderMathInElement(document.body)></script><span>
+\(\vert\psi\rangle\)
+</span>
+can be represented by a column vector.</p>
+<p>For example, a 2 dimensional ket could be represented by <span>
+\(\begin{pmatrix} v_1 \\ v_2 \end{pmatrix}\)
+</span>
+, and a 3 dimensional ket could be represented by <span>
+\(\begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix}\)
+</span>
+, and so on (where <span>
+\(v_i\in\mathbb{C}\)
+</span>
+for <span>
+\(i\in\mathbb{N}\)
+</span>
+).</p>
+<p>We can perform addition and scalar multiplication of kets just like vectors in linear algebra.</p>
+<p>For our purposes, it is safe to assume kets are 2-dimensional unless stated otherwise.</p>
+<p>A few common kets are defined below.</p>
+<span>
+\(\vert0\rangle=\begin{pmatrix} 1 \\ 0 \end{pmatrix}, \vert1\rangle=\begin{pmatrix} 1 \\ 0 \end{pmatrix}, \vert+\rangle=\begin{pmatrix} \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} \end{pmatrix}, \vert-\rangle=\begin{pmatrix} \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} \end{pmatrix}\)
+</span>
+<p>It is also common to represent the spin-up electron or horizontally polarized photon as <span>
+\(\vert0\rangle\)
+</span>
+, and the spin-down electron or vertically polarized photon as <span>
+\(\vert0\rangle\)
+</span>
+.</p>
+<h2 id=kronecker-product>
+Kronecker product
+<a class=anchor href=#kronecker-product>#</a>
+</h2>
+<p>The only operation involving kets that (probably) isn&rsquo;t covered under H2 ’A’ Level Further Mathematics Syllabus would be the Kronecker product.</p>
+<p>The Kronecker product is a binary operator that maps 2 matrices to a larger matrix.</p>
+<span>
+\(\mathbf{A}\otimes\mathbf{B}=\mathbf{C}, \mathbf{A}\in M^{m_A\times n_A}, \mathbf{B}\in M^{m_B\times n_B}, \mathbf{C}\in M^{m_Am_B\times n_An_B}\)
+</span>
+<p>For 2 dimensional kets, the Kronecker product acts as follows:</p>
+<span>
+\(\vert\psi\rangle\otimes\vert\phi\rangle=\begin{pmatrix} v_1 \\ v_2 \end{pmatrix}\otimes\begin{pmatrix} w_1 \\ w_2 \end{pmatrix}=\begin{pmatrix} v_1w_1 \\ v_1w_2 \\ v_2w_1 \\ v_2w_2 \end{pmatrix}\)
+</span>
+<p>As an example, <span>
+\(\vert0\rangle\otimes\vert1\rangle=\begin{pmatrix} 1 \\ 0 \end{pmatrix}\otimes\begin{pmatrix} 0 \\ 1 \end{pmatrix}=\begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix}\)
+</span>
+</p>
+<p>The composition of 2 quantum systems can be represented by the Kronecker product of 2 kets (<span>
+\(\vert\psi\rangle\otimes\vert\phi\rangle\)
+</span>
+).</p>
+<p>We also often write <span>
+\(\vert\psi\rangle\otimes\vert\phi\rangle\)
+</span>
+simply as <span>
+\(\vert\psi\phi\rangle\)
+</span>
+.</p>
+<h1 id=quantum-postulates>
+Quantum Postulates
+<a class=anchor href=#quantum-postulates>#</a>
+</h1>
+<h2 id=postulate-1>
+Postulate 1
+<a class=anchor href=#postulate-1>#</a>
+</h2>
+<blockquote>
+<p>Associated to any isolated physical system is a complex vector space with inner product (that is, a Hilbert space) known as the <strong>state space</strong> of the system. The system is completely described by its state vector, which is a <strong>unit vector</strong> in the system’s state space.</p>
+</blockquote>
+<p>A qubit is the simplest quantum mechanical system with a 2 dimensional state space <span>
+\(\mathbb{C}^2\)
+</span>
+. Qubit states are often described as <span>
+\(\alpha\vert0\rangle+\beta\vert1\rangle\)
+</span>
+, which is a linear combination of the orthonormal basis states <span>
+\(\vert0\rangle\)
+</span>
+and <span>
+\(\vert1\rangle\)
+</span>
+. <span>
+\(\alpha\)
+</span>
+and <span>
+\(\beta\)
+</span>
+are both complex numbers subject to the conditions <span>
+\(\lVert\alpha\rVert^2+\lVert\beta\rVert^2=1\)
+</span>
+, thus satisfying the condition that they are a unit vector within the state space <span>
+\(\mathbb{C}^2\)
+</span>
+.</p>
+<p>It is also worthy to remember that <span>
+\(\lVert\alpha\rVert^2\)
+</span>
+and <span>
+\(\lVert\beta\rVert^2\)
+</span>
+represent the probabilities of measuring <span>
+\(\vert0\rangle\)
+</span>
+and <span>
+\(\vert1\rangle\)
+</span>
+.</p>
+<h1 id=further-reading>
+Further Reading
+<a class=anchor href=#further-reading>#</a>
+</h1>
+<p>In this page, we have only covered the notation that we will use in the subsequent pages to describe entanglement. However, there is so much more math and linear algebra that are used in quantum mechanics! If interested, you can refer to Chapter 2 of Quantum coherence in photosynthesis by <strong>Dr.</strong> Ng Tiong Eng<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> or Chapter 2 of Quantum Computation and Quantum Information<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup> by Michael Nielsen and Isaac Chuang. For the more mathematically advanced, you can also refer to Chapter 1 of Modern Quantum Mechanics<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup> by J. J. Sakurai and Jim Napolitano.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>Tiong Eng, Ng. (2020). &ldquo;Quantum coherence in photosynthesis&rdquo;. <a href=http://hdl.handle.net/10497/22624>http://hdl.handle.net/10497/22624</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p>Nielsen, Michael A.; Chuang, Isaac L. (2010). Quantum Computation and Quantum Information (2nd ed.). Cambridge: Cambridge University Press. ISBN 978-1-107-00217-3.&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:3 role=doc-endnote>
+<p>Sakurai, J. J.; Napolitano, Jim (2020). Modern Quantum Mechanics (3rd ed.). Cambridge. ISBN 978-1-108-47322-4.&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#dirac-notation>Dirac Notation</a>
+<ul>
+<li><a href=#ket>Ket</a></li>
+<li><a href=#kronecker-product>Kronecker product</a></li>
+</ul>
+</li>
+<li><a href=#quantum-postulates>Quantum Postulates</a>
+<ul>
+<li><a href=#postulate-1>Postulate 1</a></li>
+</ul>
+</li>
+<li><a href=#further-reading>Further Reading</a></li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
